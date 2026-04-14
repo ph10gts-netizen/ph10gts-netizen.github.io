@@ -3,72 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Barber Studio</title>
+<title>Food Brand</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: white;
-  background: #0a0a0a;
+  background: #fff;
+  color: #111;
 }
 
 header {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.4);
   padding: 40px;
-  border-radius: 10px;
+  text-align: center;
+  color: white;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 48px;
   margin-bottom: 10px;
 }
 
 p {
-  color: #ccc;
+  font-size: 18px;
 }
 
 .btn {
+  display: inline-block;
   margin-top: 20px;
-  padding: 12px 25px;
-  background: #c59d5f;
-  border: none;
-  color: black;
-  border-radius: 5px;
+  padding: 12px 30px;
+  background: #c8102e;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 5px;
 }
 
 section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
-.services {
+.grid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
-.card {
-  background: #111;
-  padding: 20px;
+.card img {
+  width: 100%;
   border-radius: 10px;
 }
 
+.card h3 {
+  margin: 10px 0;
+}
+
 footer {
-  padding: 30px;
-  text-align: center;
-  color: #777;
+  background: #111;
+  color: #aaa;
+  padding: 40px;
 }
 </style>
 
@@ -77,42 +79,37 @@ footer {
 
 <header>
   <div class="overlay">
-    <h1>Modern Barber Shop</h1>
-    <p>Style. Precision. Confidence.</p>
-    <a href="#" class="btn">Book Now</a>
+    <h1>Fresh. Fast. Delicious.</h1>
+    <p>Real food made with real ingredients</p>
+    <a href="#" class="btn">Order Now</a>
   </div>
 </header>
 
 <section>
-  <h2>Our Services</h2>
-  <div class="services">
+  <h2>Our Menu</h2>
+  <div class="grid">
     <div class="card">
-      <h3>Haircut</h3>
-      <p>Clean and modern cuts tailored to you.</p>
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+      <h3>Burgers</h3>
     </div>
     <div class="card">
-      <h3>Beard Trim</h3>
-      <p>Sharp and professional beard styling.</p>
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+      <h3>Fries</h3>
     </div>
     <div class="card">
-      <h3>Full Service</h3>
-      <p>Hair + beard + premium finish.</p>
+      <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e">
+      <h3>Combos</h3>
     </div>
   </div>
 </section>
 
 <section>
   <h2>Why Choose Us</h2>
-  <p>Experienced barbers. Premium service. Modern environment.</p>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>WhatsApp: +1 000 000 000</p>
+  <p>Fresh ingredients. Fast service. Great taste.</p>
 </section>
 
 <footer>
-  <p>© Barber Studio</p>
+  <p>© Food Brand</p>
 </footer>
 
 </body>
