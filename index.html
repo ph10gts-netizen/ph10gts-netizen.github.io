@@ -3,55 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inovax</title>
+<title>Barber Studio</title>
+
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0a0a0a;
   color: white;
+  background: #0a0a0a;
+}
+
+header {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-header {
-  padding: 60px 20px;
+
+.overlay {
+  background: rgba(0,0,0,0.7);
+  padding: 40px;
+  border-radius: 10px;
 }
+
 h1 {
   font-size: 40px;
+  margin-bottom: 10px;
 }
+
 p {
-  color: #aaa;
+  color: #ccc;
 }
+
 .btn {
-  display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: #3B82F6;
-  color: white;
+  background: #c59d5f;
+  border: none;
+  color: black;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 8px;
+  font-weight: bold;
 }
+
 section {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #777;
 }
 </style>
+
 </head>
 <body>
 
 <header>
-  <h1>We build websites that convert</h1>
-  <p>Modern websites for businesses that want more clients</p>
-  <a href="#" class="btn">Get Started</a>
+  <div class="overlay">
+    <h1>Modern Barber Shop</h1>
+    <p>Style. Precision. Confidence.</p>
+    <a href="#" class="btn">Book Now</a>
+  </div>
 </header>
 
 <section>
-  <h2>What we do</h2>
-  <p>We create clean, fast and professional websites for businesses worldwide.</p>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Haircut</h3>
+      <p>Clean and modern cuts tailored to you.</p>
+    </div>
+    <div class="card">
+      <h3>Beard Trim</h3>
+      <p>Sharp and professional beard styling.</p>
+    </div>
+    <div class="card">
+      <h3>Full Service</h3>
+      <p>Hair + beard + premium finish.</p>
+    </div>
+  </div>
 </section>
 
 <section>
-  <h2>Why choose us</h2>
-  <p>Fast delivery. Modern design. Results focused.</p>
+  <h2>Why Choose Us</h2>
+  <p>Experienced barbers. Premium service. Modern environment.</p>
 </section>
+
+<section>
+  <h2>Contact</h2>
+  <p>WhatsApp: +1 000 000 000</p>
+</section>
+
+<footer>
+  <p>© Barber Studio</p>
+</footer>
 
 </body>
 </html>
