@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PetCare - Seu Pet em Boas Mãos</title>
+<title>PetCare Premium</title>
 
 <style>
 body {
@@ -13,67 +13,113 @@ body {
   color: white;
 }
 
+/* HEADER */
 header {
-  background: black;
-  padding: 15px;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
 }
 
+/* HERO */
 .hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+  url('https://images.unsplash.com/photo-1558788353-f76d92427f16') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 80px 20px;
+  padding: 20px;
 }
 
 .hero h1 {
-  font-size: 38px;
+  font-size: 48px;
+}
+
+.hero p {
+  color: #ccc;
+  max-width: 500px;
+  margin: auto;
 }
 
 .btn {
+  margin-top: 20px;
+  padding: 14px 28px;
   background: #00ff88;
-  padding: 12px 25px;
   color: black;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 30px;
+  font-weight: bold;
 }
 
-.section {
-  padding: 50px 20px;
+/* SECTIONS */
+section {
+  padding: 100px 20px;
   text-align: center;
 }
 
+/* CARDS GRID */
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .card {
   background: #111;
-  margin: 10px;
-  padding: 20px;
-  width: 250px;
-  border-radius: 10px;
-}
-
-.footer {
-  background: black;
   padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
 }
 
-.footer a {
-  display: block;
-  color: gray;
-  margin: 5px 0;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* MAP */
+iframe {
+  border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+
+footer a {
+  color: #aaa;
   text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ff88;
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
 }
 </style>
 </head>
@@ -85,59 +131,57 @@ nav a {
   <nav>
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre</a>
-    <a href="#depoimentos">Depoimentos</a>
     <a href="#contato">Contato</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>Seu pet merece o melhor cuidado</h1>
-  <p>Banho, tosa e atendimento com amor e qualidade</p>
-  <a href="https://wa.me/5599999999999" class="btn">Agendar no WhatsApp</a>
+  <div>
+    <h1>Cuidado premium para seu pet</h1>
+    <p>Mais conforto, mais segurança e mais carinho para o seu melhor amigo.</p>
+    <a href="https://wa.me/5599999999999" class="btn">Agendar agora</a>
+  </div>
 </section>
 
-<section id="servicos" class="section">
-  <h2>Nossos Serviços</h2>
+<section id="servicos">
+  <h2>Serviços</h2>
   <div class="cards">
-    <div class="card">Banho e Tosa</div>
-    <div class="card">Consulta Veterinária</div>
-    <div class="card">Vacinação</div>
+    <div class="card">Banho & Tosa</div>
+    <div class="card">Veterinário</div>
+    <div class="card">Vacinas</div>
     <div class="card">Produtos Pet</div>
   </div>
 </section>
 
-<section id="sobre" class="section">
+<section id="sobre">
   <h2>Sobre nós</h2>
-  <p>Mais de 5 anos cuidando de pets com carinho e profissionalismo.</p>
+  <p>Atendimento profissional com anos de experiência no cuidado animal.</p>
 </section>
 
-<section id="depoimentos" class="section">
-  <h2>Depoimentos</h2>
-  <p>"Meu cachorro ama esse lugar!"</p>
-  <p>"Atendimento incrível e rápido."</p>
+<section>
+  <h2>Localização</h2>
+  <iframe src="https://www.google.com/maps?q=São+Paulo&output=embed" width="100%" height="300"></iframe>
 </section>
 
-<section class="section">
-  <h2>Onde estamos</h2>
-  <iframe 
-    src="https://www.google.com/maps?q=São+Paulo&output=embed" 
-    width="100%" height="300" style="border:0;">
-  </iframe>
-</section>
-
-<section id="contato" class="section">
+<section id="contato">
   <h2>Contato</h2>
   <p>WhatsApp: (99) 99999-9999</p>
-  <p>Rua Exemplo, 123</p>
 </section>
 
-<footer class="footer">
-  <h3>Informações</h3>
-  <a href="acessibilidade.html">Acessibilidade</a>
-  <a href="privacidade.html">Política de Privacidade</a>
-  <a href="termos.html">Termos de Uso</a>
-  <a href="cookies.html">Política de Cookies</a>
+<footer>
+  <div>
+    <h3>Empresa</h3>
+    <a href="about.html">Sobre</a>
+    <a href="contact.html">Contato</a>
+  </div>
+  <div>
+    <h3>Legal</h3>
+    <a href="privacidade.html">Privacidade</a>
+    <a href="termos.html">Termos</a>
+  </div>
 </footer>
+
+<a href="https://wa.me/5599999999999" class="whatsapp">W</a>
 
 </body>
 </html>
