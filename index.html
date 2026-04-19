@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Barbearia Elite</title>
+<title>PetCare - Seu Pet em Boas Mãos</title>
 
 <style>
 body {
@@ -18,11 +18,6 @@ header {
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  color: #f5b942;
 }
 
 nav a {
@@ -36,17 +31,18 @@ nav a {
   padding: 80px 20px;
 }
 
-.hero h2 {
-  font-size: 40px;
+.hero h1 {
+  font-size: 38px;
 }
 
 .btn {
-  background: #f5b942;
+  background: #00ff88;
   padding: 12px 25px;
   color: black;
   text-decoration: none;
   display: inline-block;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
 .section {
@@ -71,7 +67,6 @@ nav a {
 .footer {
   background: black;
   padding: 30px;
-  font-size: 14px;
 }
 
 .footer a {
@@ -86,7 +81,7 @@ nav a {
 <body>
 
 <header>
-  <h1>Barbearia Elite</h1>
+  <h2>PetCare</h2>
   <nav>
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre</a>
@@ -96,30 +91,38 @@ nav a {
 </header>
 
 <section class="hero">
-  <h2>Seu estilo começa aqui</h2>
-  <p>Cortes modernos, atendimento premium</p>
-  <a href="#contato" class="btn">Agendar horário</a>
+  <h1>Seu pet merece o melhor cuidado</h1>
+  <p>Banho, tosa e atendimento com amor e qualidade</p>
+  <a href="https://wa.me/5599999999999" class="btn">Agendar no WhatsApp</a>
 </section>
 
 <section id="servicos" class="section">
-  <h2>Serviços</h2>
+  <h2>Nossos Serviços</h2>
   <div class="cards">
-    <div class="card">Corte masculino</div>
-    <div class="card">Barba completa</div>
-    <div class="card">Pigmentação</div>
-    <div class="card">Pacote VIP</div>
+    <div class="card">Banho e Tosa</div>
+    <div class="card">Consulta Veterinária</div>
+    <div class="card">Vacinação</div>
+    <div class="card">Produtos Pet</div>
   </div>
 </section>
 
 <section id="sobre" class="section">
   <h2>Sobre nós</h2>
-  <p>Mais de 5 anos transformando visuais e elevando a autoestima dos nossos clientes.</p>
+  <p>Mais de 5 anos cuidando de pets com carinho e profissionalismo.</p>
 </section>
 
 <section id="depoimentos" class="section">
   <h2>Depoimentos</h2>
-  <p>"Melhor barbearia da cidade!"</p>
-  <p>"Atendimento top demais."</p>
+  <p>"Meu cachorro ama esse lugar!"</p>
+  <p>"Atendimento incrível e rápido."</p>
+</section>
+
+<section class="section">
+  <h2>Onde estamos</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=São+Paulo&output=embed" 
+    width="100%" height="300" style="border:0;">
+  </iframe>
 </section>
 
 <section id="contato" class="section">
