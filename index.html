@@ -3,100 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PetCare Premium</title>
+<title>PetStore Premium</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0a0a0a;
-  color: white;
+  background: #f8f8f8;
+  color: #111;
 }
 
 /* HEADER */
 header {
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(10px);
+  background: white;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
+  border-bottom: 1px solid #ddd;
 }
 
 nav a {
-  color: white;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
+  color: black;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-  url('https://images.unsplash.com/photo-1558788353-f76d92427f16') center/cover;
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   text-align: center;
-  padding: 20px;
 }
 
 .hero h1 {
-  font-size: 48px;
-}
-
-.hero p {
-  color: #ccc;
-  max-width: 500px;
-  margin: auto;
+  font-size: 50px;
 }
 
 .btn {
-  margin-top: 20px;
-  padding: 14px 28px;
-  background: #00ff88;
-  color: black;
+  background: #ff6b00;
+  padding: 14px 30px;
+  color: white;
   text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
 }
 
-/* SECTIONS */
+/* SECTION */
 section {
-  padding: 100px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
-/* CARDS GRID */
-.cards {
+/* GRID */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 20px;
-  max-width: 1000px;
-  margin: auto;
 }
 
+/* CARD */
 .card {
-  background: #111;
-  padding: 30px;
-  border-radius: 15px;
-  transition: 0.3s;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* MAP */
-iframe {
-  border-radius: 15px;
+/* CATEGORY IMAGES */
+.category img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
-  background: #000;
+  background: #111;
+  color: white;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -105,21 +90,8 @@ footer {
 footer a {
   color: #aaa;
   text-decoration: none;
-  margin: 5px 0;
   display: block;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #00ff88;
-  color: black;
-  padding: 15px;
-  border-radius: 50%;
-  text-decoration: none;
-  font-weight: bold;
+  margin: 5px 0;
 }
 </style>
 </head>
@@ -127,43 +99,75 @@ footer a {
 <body>
 
 <header>
-  <h2>PetCare</h2>
+  <h2>PetStore</h2>
   <nav>
-    <a href="#servicos">Serviços</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
+    <a href="#">Cachorros</a>
+    <a href="#">Gatos</a>
+    <a href="#">Aves</a>
+    <a href="#">Peixes</a>
+    <a href="#">Contato</a>
   </nav>
 </header>
 
 <section class="hero">
   <div>
-    <h1>Cuidado premium para seu pet</h1>
-    <p>Mais conforto, mais segurança e mais carinho para o seu melhor amigo.</p>
-    <a href="https://wa.me/5599999999999" class="btn">Agendar agora</a>
+    <h1>Tudo para seu pet em um só lugar</h1>
+    <p>Qualidade, cuidado e amor</p>
+    <a href="#" class="btn">Comprar agora</a>
   </div>
-</section>
-
-<section id="servicos">
-  <h2>Serviços</h2>
-  <div class="cards">
-    <div class="card">Banho & Tosa</div>
-    <div class="card">Veterinário</div>
-    <div class="card">Vacinas</div>
-    <div class="card">Produtos Pet</div>
-  </div>
-</section>
-
-<section id="sobre">
-  <h2>Sobre nós</h2>
-  <p>Atendimento profissional com anos de experiência no cuidado animal.</p>
 </section>
 
 <section>
-  <h2>Localização</h2>
-  <iframe src="https://www.google.com/maps?q=São+Paulo&output=embed" width="100%" height="300"></iframe>
+  <h2>Categorias</h2>
+  <div class="grid">
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
+      <h3>Cachorros</h3>
+    </div>
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
+      <h3>Gatos</h3>
+    </div>
+    <div class="category">
+      <img src="https://images.unsplash.com/photo-1501706362039-c6e13c4d6f6f">
+      <h3>Aves</h3>
+    </div>
+  </div>
 </section>
 
-<section id="contato">
+<section>
+  <h2>Produtos em destaque</h2>
+  <div class="grid">
+    <div class="card">Ração Premium</div>
+    <div class="card">Brinquedos</div>
+    <div class="card">Coleiras</div>
+    <div class="card">Higiene</div>
+  </div>
+</section>
+
+<section>
+  <h2>Por que escolher a gente?</h2>
+  <div class="grid">
+    <div class="card">Entrega rápida</div>
+    <div class="card">Produtos de qualidade</div>
+    <div class="card">Atendimento especializado</div>
+  </div>
+</section>
+
+<section>
+  <h2>Depoimentos</h2>
+  <p>"Melhor loja para pets!"</p>
+  <p>"Meu cachorro ama os produtos."</p>
+</section>
+
+<section>
+  <h2>Newsletter</h2>
+  <p>Receba novidades e promoções</p>
+  <input type="email" placeholder="Seu email">
+  <button>Inscrever</button>
+</section>
+
+<section>
   <h2>Contato</h2>
   <p>WhatsApp: (99) 99999-9999</p>
 </section>
@@ -171,17 +175,21 @@ footer a {
 <footer>
   <div>
     <h3>Empresa</h3>
-    <a href="about.html">Sobre</a>
+    <a href="about.html">Sobre nós</a>
     <a href="contact.html">Contato</a>
   </div>
   <div>
-    <h3>Legal</h3>
+    <h3>Ajuda</h3>
     <a href="privacidade.html">Privacidade</a>
     <a href="termos.html">Termos</a>
+    <a href="acessibilidade.html">Acessibilidade</a>
+  </div>
+  <div>
+    <h3>Serviços</h3>
+    <a href="#">Banho & Tosa</a>
+    <a href="#">Veterinário</a>
   </div>
 </footer>
-
-<a href="https://wa.me/5599999999999" class="whatsapp">W</a>
 
 </body>
 </html>
