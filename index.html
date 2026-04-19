@@ -54,6 +54,20 @@ nav a {
   text-align: center;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #111;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
 .footer {
   background: black;
   padding: 30px;
@@ -76,33 +90,42 @@ nav a {
   <nav>
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre</a>
+    <a href="#depoimentos">Depoimentos</a>
     <a href="#contato">Contato</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Corte de respeito, estilo de verdade</h2>
-  <p>Transformamos seu visual com qualidade profissional</p>
-  <a href="#contato" class="btn">Agendar agora</a>
+  <h2>Seu estilo começa aqui</h2>
+  <p>Cortes modernos, atendimento premium</p>
+  <a href="#contato" class="btn">Agendar horário</a>
 </section>
 
 <section id="servicos" class="section">
   <h2>Serviços</h2>
-  <p>Corte masculino</p>
-  <p>Barba completa</p>
-  <p>Sobrancelha</p>
-  <p>Pacotes VIP</p>
+  <div class="cards">
+    <div class="card">Corte masculino</div>
+    <div class="card">Barba completa</div>
+    <div class="card">Pigmentação</div>
+    <div class="card">Pacote VIP</div>
+  </div>
 </section>
 
 <section id="sobre" class="section">
   <h2>Sobre nós</h2>
-  <p>Somos especialistas em estilo masculino, com atendimento premium e ambiente moderno.</p>
+  <p>Mais de 5 anos transformando visuais e elevando a autoestima dos nossos clientes.</p>
+</section>
+
+<section id="depoimentos" class="section">
+  <h2>Depoimentos</h2>
+  <p>"Melhor barbearia da cidade!"</p>
+  <p>"Atendimento top demais."</p>
 </section>
 
 <section id="contato" class="section">
   <h2>Contato</h2>
   <p>WhatsApp: (99) 99999-9999</p>
-  <p>Endereço: Rua Exemplo, 123</p>
+  <p>Rua Exemplo, 123</p>
 </section>
 
 <footer class="footer">
