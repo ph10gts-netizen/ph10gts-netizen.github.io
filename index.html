@@ -4,158 +4,147 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- FONT PROFISSIONAL -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<title>PetCare Premium</title>
+<title>PetCare</title>
 
 <style>
-* { box-sizing: border-box; }
+*{box-sizing:border-box;}
 
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #ffffff;
-  color: #111;
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#fff;
+  color:#111;
 }
 
 /* HEADER */
-header {
-  background: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:#fff;
+  border-bottom:1px solid #eee;
+  position:sticky;
+  top:0;
+  z-index:10;
 }
 
-header h2 {
-  color: #00cc66;
+header h2{
+  color:#00cc66;
+}
+
+nav a{
+  margin:0 10px;
+  text-decoration:none;
+  color:#333;
 }
 
 /* HERO */
-.hero {
-  padding: 140px 20px 100px;
-  text-align: center;
+.hero{
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1558788353-f76d92427f16') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
 }
 
-.hero h1 {
-  font-size: 40px;
-  font-weight: 700;
+.hero-overlay{
+  background:rgba(0,0,0,0.6);
+  padding:40px;
+  border-radius:10px;
 }
 
-.hero p {
-  color: #666;
-  max-width: 500px;
-  margin: auto;
+.hero h1{
+  font-size:42px;
 }
 
-.btn {
-  margin-top: 25px;
-  padding: 14px 30px;
-  background: #00cc66;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s;
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#00cc66;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
 }
 
-.btn:hover {
-  background: #00aa55;
-}
-
-/* SECTIONS */
-section {
-  padding: 80px 20px;
-  text-align: center;
+/* SECTION */
+section{
+  padding:80px 20px;
+  text-align:center;
 }
 
 /* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
 }
 
-.card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.3s;
+.card{
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
 }
 
-.card:hover {
-  transform: translateY(-8px);
+.card:hover{
+  transform:translateY(-6px);
 }
 
-.card img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
 }
 
-/* ICON SECTION */
-.icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  max-width: 900px;
-  margin: auto;
-  gap: 20px;
+.card h3{
+  padding:15px;
 }
 
-.icon-box {
-  padding: 20px;
-}
-
-.icon {
-  font-size: 30px;
-}
-
-/* TESTIMONIAL */
-.testimonial {
-  background: #f8f8f8;
-  padding: 25px;
-  border-radius: 15px;
-  margin: 10px auto;
-  max-width: 600px;
+/* MAP */
+iframe{
+  width:100%;
+  border-radius:10px;
 }
 
 /* FOOTER */
-footer {
-  background: #111;
-  color: white;
-  padding: 50px 20px;
+footer{
+  background:#111;
+  color:white;
+  padding:40px 20px;
 }
 
-footer a {
-  color: #aaa;
-  display: block;
-  text-decoration: none;
-  margin: 5px 0;
+footer a{
+  color:#aaa;
+  text-decoration:none;
+  display:block;
+  margin:5px 0;
 }
 
 /* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #00cc66;
-  color: white;
-  padding: 18px;
-  border-radius: 50%;
-  font-weight: bold;
-  text-decoration: none;
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#00cc66;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 /* RESPONSIVO */
 @media(max-width:768px){
-  .hero h1 {
-    font-size: 30px;
+  .hero h1{
+    font-size:28px;
   }
 }
 </style>
@@ -165,59 +154,51 @@ footer a {
 
 <header>
   <h2>PetCare</h2>
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#local">Local</a>
+    <a href="#contato">Contato</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <h1>O cuidado que seu pet merece</h1>
-  <p>Serviço premium com profissionais especializados e atendimento humanizado</p>
-  <a href="https://wa.me/5599999999999" class="btn">Agendar agora</a>
+  <div class="hero-overlay">
+    <h1>Cuidado profissional para seu pet</h1>
+    <p>Banho, tosa e atendimento especializado</p>
+    <a href="https://wa.me/5599999999999" class="btn">Agendar agora</a>
+  </div>
 </section>
 
-<section>
-  <h2>Serviços</h2>
+<section id="servicos">
+  <h2>Nossos Serviços</h2>
+
   <div class="cards">
     <div class="card">
       <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
       <h3>Banho & Tosa</h3>
     </div>
+
     <div class="card">
       <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
-      <h3>Veterinário</h3>
+      <h3>Consulta Veterinária</h3>
     </div>
+
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1558944351-cdcb0b6b6c4c">
+      <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8">
       <h3>Vacinação</h3>
     </div>
   </div>
 </section>
 
-<section>
-  <h2>Diferenciais</h2>
-  <div class="icons">
-    <div class="icon-box">
-      <div class="icon">🐾</div>
-      <p>Profissionais qualificados</p>
-    </div>
-    <div class="icon-box">
-      <div class="icon">⚡</div>
-      <p>Atendimento rápido</p>
-    </div>
-    <div class="icon-box">
-      <div class="icon">❤️</div>
-      <p>Cuidado com amor</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Depoimentos</h2>
-  <div class="testimonial">"Simplesmente perfeito!"</div>
-  <div class="testimonial">"Meu pet saiu outro!"</div>
-</section>
-
-<section>
+<section id="local">
   <h2>Localização</h2>
-  <iframe src="https://www.google.com/maps?q=São+Paulo&output=embed" width="100%" height="300"></iframe>
+  <iframe src="https://www.google.com/maps?q=São+Paulo&output=embed" height="300"></iframe>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>WhatsApp: (99) 99999-9999</p>
+  <p>Rua Exemplo, 123</p>
 </section>
 
 <footer>
