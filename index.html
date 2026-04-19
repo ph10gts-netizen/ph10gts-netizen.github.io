@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FONT PROFISSIONAL -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <title>PetCare Premium</title>
 
 <style>
@@ -10,109 +14,122 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
   color: #111;
 }
 
 /* HEADER */
 header {
   background: white;
-  padding: 15px 20px;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
-  z-index: 10;
+}
+
+header h2 {
+  color: #00cc66;
 }
 
 /* HERO */
 .hero {
-  padding: 120px 20px 80px;
+  padding: 140px 20px 100px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 34px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero p {
+  color: #666;
+  max-width: 500px;
+  margin: auto;
 }
 
 .btn {
-  margin-top: 20px;
-  padding: 12px 25px;
+  margin-top: 25px;
+  padding: 14px 30px;
   background: #00cc66;
   color: white;
+  border-radius: 30px;
   text-decoration: none;
-  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00aa55;
 }
 
 /* SECTIONS */
 section {
-  padding: 70px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
 /* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-  gap: 20px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+  max-width: 1100px;
   margin: auto;
 }
 
 .card {
-  background: #fff;
-  border-radius: 12px;
+  background: white;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
 .card img {
   width: 100%;
-  height: 160px;
+  height: 170px;
   object-fit: cover;
 }
 
-/* BEFORE AFTER */
-.split {
+/* ICON SECTION */
+.icons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  max-width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  max-width: 900px;
   margin: auto;
+  gap: 20px;
 }
 
-.split img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* TESTIMONIALS */
-.testimonial {
-  background: #f5f5f5;
+.icon-box {
   padding: 20px;
-  border-radius: 10px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 15px;
   margin: 10px auto;
   max-width: 600px;
-}
-
-/* MAP */
-iframe {
-  width: 100%;
-  border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
   background: #111;
   color: white;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 footer a {
@@ -122,35 +139,23 @@ footer a {
   margin: 5px 0;
 }
 
-/* WHATS FLOAT */
+/* WHATSAPP */
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: #00cc66;
   color: white;
-  padding: 15px;
+  padding: 18px;
   border-radius: 50%;
-  text-decoration: none;
   font-weight: bold;
-}
-
-/* ANIMATION */
-.fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 0.6s;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
+  text-decoration: none;
 }
 
 /* RESPONSIVO */
 @media(max-width:768px){
-  .split {
-    grid-template-columns: 1fr;
+  .hero h1 {
+    font-size: 30px;
   }
 }
 </style>
@@ -162,13 +167,13 @@ footer a {
   <h2>PetCare</h2>
 </header>
 
-<section class="hero fade">
-  <h1>Cuidado premium para seu pet</h1>
-  <p>Transformando a experiência do seu melhor amigo</p>
+<section class="hero">
+  <h1>O cuidado que seu pet merece</h1>
+  <p>Serviço premium com profissionais especializados e atendimento humanizado</p>
   <a href="https://wa.me/5599999999999" class="btn">Agendar agora</a>
 </section>
 
-<section class="fade">
+<section>
   <h2>Serviços</h2>
   <div class="cards">
     <div class="card">
@@ -179,48 +184,50 @@ footer a {
       <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
       <h3>Veterinário</h3>
     </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1558944351-cdcb0b6b6c4c">
+      <h3>Vacinação</h3>
+    </div>
   </div>
 </section>
 
-<section class="fade">
-  <h2>Antes e Depois</h2>
-  <div class="split">
-    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
-    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16">
+<section>
+  <h2>Diferenciais</h2>
+  <div class="icons">
+    <div class="icon-box">
+      <div class="icon">🐾</div>
+      <p>Profissionais qualificados</p>
+    </div>
+    <div class="icon-box">
+      <div class="icon">⚡</div>
+      <p>Atendimento rápido</p>
+    </div>
+    <div class="icon-box">
+      <div class="icon">❤️</div>
+      <p>Cuidado com amor</p>
+    </div>
   </div>
 </section>
 
-<section class="fade">
+<section>
   <h2>Depoimentos</h2>
+  <div class="testimonial">"Simplesmente perfeito!"</div>
   <div class="testimonial">"Meu pet saiu outro!"</div>
-  <div class="testimonial">"Atendimento perfeito."</div>
 </section>
 
-<section class="fade">
+<section>
   <h2>Localização</h2>
-  <iframe src="https://www.google.com/maps?q=São+Paulo&output=embed" height="300"></iframe>
+  <iframe src="https://www.google.com/maps?q=São+Paulo&output=embed" width="100%" height="300"></iframe>
 </section>
 
 <footer>
   <h3>Informações</h3>
   <a href="privacidade.html">Privacidade</a>
   <a href="termos.html">Termos</a>
+  <a href="acessibilidade.html">Acessibilidade</a>
 </footer>
 
 <a href="https://wa.me/5599999999999" class="whatsapp">W</a>
-
-<script>
-const faders = document.querySelectorAll('.fade');
-
-window.addEventListener('scroll', () => {
-  faders.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if(top < window.innerHeight - 50){
-      el.classList.add('show');
-    }
-  });
-});
-</script>
 
 </body>
 </html>
