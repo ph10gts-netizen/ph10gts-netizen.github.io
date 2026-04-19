@@ -3,77 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PetStore Premium</title>
+<title>PetCare Premium</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f8f8f8;
+  background: #ffffff;
   color: #111;
 }
 
 /* HEADER */
 header {
   background: white;
-  padding: 15px 40px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 5px 10px;
   text-decoration: none;
   color: black;
 }
 
 /* HERO */
 .hero {
-  height: 90vh;
-  background: url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1') center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  padding: 100px 20px 60px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 50px;
+  font-size: 32px;
+}
+
+.hero p {
+  max-width: 500px;
+  margin: 10px auto;
 }
 
 .btn {
-  background: #ff6b00;
-  padding: 14px 30px;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00cc66;
   color: white;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
+  border-radius: 5px;
 }
 
 /* SECTION */
 section {
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
-/* GRID */
-.grid {
+/* CARDS COM IMAGEM */
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* CARD */
 .card {
-  background: white;
-  padding: 20px;
+  background: #fff;
   border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
-/* CATEGORY IMAGES */
-.category img {
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+}
+
+/* MAP */
+iframe {
   width: 100%;
   border-radius: 10px;
 }
@@ -82,16 +109,21 @@ section {
 footer {
   background: #111;
   color: white;
-  padding: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  padding: 40px 20px;
 }
 
 footer a {
   color: #aaa;
-  text-decoration: none;
   display: block;
   margin: 5px 0;
+  text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
 }
 </style>
 </head>
@@ -99,96 +131,68 @@ footer a {
 <body>
 
 <header>
-  <h2>PetStore</h2>
+  <h2>PetCare</h2>
   <nav>
-    <a href="#">Cachorros</a>
-    <a href="#">Gatos</a>
-    <a href="#">Aves</a>
-    <a href="#">Peixes</a>
-    <a href="#">Contato</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div>
-    <h1>Tudo para seu pet em um só lugar</h1>
-    <p>Qualidade, cuidado e amor</p>
-    <a href="#" class="btn">Comprar agora</a>
-  </div>
+  <h1>Cuidado completo para seu pet</h1>
+  <p>Qualidade, carinho e profissionais especializados</p>
+  <a href="https://wa.me/5599999999999" class="btn">Agendar agora</a>
 </section>
 
-<section>
-  <h2>Categorias</h2>
-  <div class="grid">
-    <div class="category">
+<section id="servicos">
+  <h2>Nossos Serviços</h2>
+  <div class="cards">
+
+    <div class="card">
       <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
-      <h3>Cachorros</h3>
+      <h3>Banho & Tosa</h3>
     </div>
-    <div class="category">
+
+    <div class="card">
       <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
-      <h3>Gatos</h3>
+      <h3>Veterinário</h3>
     </div>
-    <div class="category">
-      <img src="https://images.unsplash.com/photo-1501706362039-c6e13c4d6f6f">
-      <h3>Aves</h3>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1558944351-cdcb0b6b6c4c">
+      <h3>Vacinas</h3>
     </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee">
+      <h3>Produtos Pet</h3>
+    </div>
+
   </div>
 </section>
 
-<section>
-  <h2>Produtos em destaque</h2>
-  <div class="grid">
-    <div class="card">Ração Premium</div>
-    <div class="card">Brinquedos</div>
-    <div class="card">Coleiras</div>
-    <div class="card">Higiene</div>
-  </div>
+<section id="sobre">
+  <h2>Sobre nós</h2>
+  <p>Equipe especializada oferecendo o melhor cuidado para seu pet.</p>
 </section>
 
 <section>
-  <h2>Por que escolher a gente?</h2>
-  <div class="grid">
-    <div class="card">Entrega rápida</div>
-    <div class="card">Produtos de qualidade</div>
-    <div class="card">Atendimento especializado</div>
-  </div>
+  <h2>Localização</h2>
+  <iframe src="https://www.google.com/maps?q=São+Paulo&output=embed" height="300"></iframe>
 </section>
 
-<section>
-  <h2>Depoimentos</h2>
-  <p>"Melhor loja para pets!"</p>
-  <p>"Meu cachorro ama os produtos."</p>
-</section>
-
-<section>
-  <h2>Newsletter</h2>
-  <p>Receba novidades e promoções</p>
-  <input type="email" placeholder="Seu email">
-  <button>Inscrever</button>
-</section>
-
-<section>
+<section id="contato">
   <h2>Contato</h2>
   <p>WhatsApp: (99) 99999-9999</p>
+  <p>Rua Exemplo, 123</p>
 </section>
 
 <footer>
-  <div>
-    <h3>Empresa</h3>
-    <a href="about.html">Sobre nós</a>
-    <a href="contact.html">Contato</a>
-  </div>
-  <div>
-    <h3>Ajuda</h3>
-    <a href="privacidade.html">Privacidade</a>
-    <a href="termos.html">Termos</a>
-    <a href="acessibilidade.html">Acessibilidade</a>
-  </div>
-  <div>
-    <h3>Serviços</h3>
-    <a href="#">Banho & Tosa</a>
-    <a href="#">Veterinário</a>
-  </div>
+  <h3>Informações</h3>
+  <a href="privacidade.html">Política de Privacidade</a>
+  <a href="termos.html">Termos de Uso</a>
+  <a href="acessibilidade.html">Acessibilidade</a>
 </footer>
 
 </body>
