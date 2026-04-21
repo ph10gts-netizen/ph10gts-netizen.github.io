@@ -39,7 +39,7 @@ nav a{
 /* HERO */
 .hero{
   height:90vh;
-  background:url('https://images.unsplash.com/photo-1558788353-f76d92427f16') center/cover;
+  background:url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e') center/cover;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -89,7 +89,6 @@ section{
   overflow:hidden;
   box-shadow:0 10px 25px rgba(0,0,0,0.1);
   transition:0.3s;
-  background:#fff;
 }
 
 .card:hover{
@@ -106,12 +105,17 @@ section{
   padding:15px;
 }
 
-/* INFO GRID */
-.info-grid{
+/* GALLERY */
+.gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:20px;
+  gap:15px;
   margin-top:30px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
 }
 
 /* MAP */
@@ -159,7 +163,7 @@ footer a{
   <h2>Stinky Pete's</h2>
   <nav>
     <a href="#services">Services</a>
-    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
     <a href="#location">Location</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -167,8 +171,8 @@ footer a{
 
 <section class="hero">
   <div class="overlay">
-    <h1>Premium Pet Grooming in Grand Rapids</h1>
-    <p>Professional, gentle and personalized care for your pet</p>
+    <h1>Professional Dog Grooming in Grand Rapids</h1>
+    <p>Quality care, experienced grooming and a calm environment for your dog</p>
     <a href="tel:+16169155987" class="btn">Call Now</a>
   </div>
 </section>
@@ -185,12 +189,12 @@ footer a{
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b">
         <h3>Bath & Cleaning</h3>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8">
+        <img src="https://images.unsplash.com/photo-1601758173925-196cda2c6d7c">
         <h3>Nail Trimming</h3>
       </div>
 
@@ -198,33 +202,23 @@ footer a{
   </div>
 </section>
 
-<section id="about">
+<section id="gallery">
   <div class="container">
-    <h2>About Us</h2>
-    <p>Stinky Pete's Pet Grooming is known in Grand Rapids for its friendly service, attention to detail and commitment to keeping pets comfortable and safe during every visit.</p>
+    <h2>Our Work</h2>
 
-    <div class="info-grid">
-      <div>
-        <h3>✔ Experienced Care</h3>
-        <p>Skilled grooming with attention to each pet's needs.</p>
-      </div>
-
-      <div>
-        <h3>✔ Calm Environment</h3>
-        <p>We prioritize stress-free grooming experiences.</p>
-      </div>
-
-      <div>
-        <h3>✔ Trusted Locally</h3>
-        <p>Highly rated by local customers.</p>
-      </div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16">
+      <img src="https://images.unsplash.com/photo-1598137262971-9e1c52c5d9d0">
+      <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e">
+      <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006">
     </div>
+
   </div>
 </section>
 
 <section id="location">
   <div class="container">
-    <h2>Location</h2>
+    <h2>Visit Us</h2>
     <iframe src="https://www.google.com/maps?q=Grand+Rapids+Michigan&output=embed" height="300"></iframe>
   </div>
 </section>
