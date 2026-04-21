@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<title>PetCare</title>
+<title>Stinky Pete's Pet Grooming</title>
 
 <style>
 *{box-sizing:border-box;}
@@ -24,15 +24,10 @@ header{
   justify-content:space-between;
   align-items:center;
   padding:15px 30px;
-  background:#fff;
   border-bottom:1px solid #eee;
   position:sticky;
   top:0;
-  z-index:10;
-}
-
-header h2{
-  color:#00cc66;
+  background:#fff;
 }
 
 nav a{
@@ -44,15 +39,15 @@ nav a{
 /* HERO */
 .hero{
   height:90vh;
-  background:url('https://images.unsplash.com/photo-1558788353-f76d92427f16') center/cover no-repeat;
+  background:url('https://images.unsplash.com/photo-1558788353-f76d92427f16') center/cover;
   display:flex;
   align-items:center;
   justify-content:center;
-  text-align:center;
   color:white;
+  text-align:center;
 }
 
-.hero-overlay{
+.overlay{
   background:rgba(0,0,0,0.6);
   padding:40px;
   border-radius:10px;
@@ -63,7 +58,6 @@ nav a{
 }
 
 .btn{
-  display:inline-block;
   margin-top:20px;
   padding:12px 25px;
   background:#00cc66;
@@ -104,10 +98,6 @@ section{
   object-fit:cover;
 }
 
-.card h3{
-  padding:15px;
-}
-
 /* MAP */
 iframe{
   width:100%;
@@ -123,13 +113,13 @@ footer{
 
 footer a{
   color:#aaa;
-  text-decoration:none;
   display:block;
+  text-decoration:none;
   margin:5px 0;
 }
 
-/* WHATSAPP */
-.whatsapp{
+/* WHATS / CALL */
+.call{
   position:fixed;
   bottom:20px;
   right:20px;
@@ -143,9 +133,7 @@ footer a{
 
 /* RESPONSIVO */
 @media(max-width:768px){
-  .hero h1{
-    font-size:28px;
-  }
+  .hero h1{font-size:28px;}
 }
 </style>
 </head>
@@ -153,62 +141,68 @@ footer a{
 <body>
 
 <header>
-  <h2>PetCare</h2>
+  <h2>Stinky Pete's</h2>
   <nav>
-    <a href="#servicos">Serviços</a>
-    <a href="#local">Local</a>
-    <a href="#contato">Contato</a>
+    <a href="#services">Services</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-overlay">
-    <h1>Cuidado profissional para seu pet</h1>
-    <p>Banho, tosa e atendimento especializado</p>
-    <a href="https://wa.me/5599999999999" class="btn">Agendar agora</a>
+  <div class="overlay">
+    <h1>Professional Pet Grooming You Can Trust</h1>
+    <p>Serving Grand Rapids with care, patience and quality grooming services.</p>
+    <a href="tel:+16169155987" class="btn">Call Now</a>
   </div>
 </section>
 
-<section id="servicos">
-  <h2>Nossos Serviços</h2>
+<section id="services">
+  <h2>Our Services</h2>
 
   <div class="cards">
+
     <div class="card">
       <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
-      <h3>Banho & Tosa</h3>
+      <h3>Full Grooming</h3>
     </div>
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
-      <h3>Consulta Veterinária</h3>
+      <h3>Bath & Clean</h3>
     </div>
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8">
-      <h3>Vacinação</h3>
+      <h3>Nail Trimming</h3>
     </div>
+
   </div>
 </section>
 
-<section id="local">
-  <h2>Localização</h2>
-  <iframe src="https://www.google.com/maps?q=São+Paulo&output=embed" height="300"></iframe>
+<section>
+  <h2>Why Choose Us</h2>
+  <p>We focus on gentle handling, personalized service and making your pet feel safe and comfortable.</p>
 </section>
 
-<section id="contato">
-  <h2>Contato</h2>
-  <p>WhatsApp: (99) 99999-9999</p>
-  <p>Rua Exemplo, 123</p>
+<section id="location">
+  <h2>Visit Us</h2>
+  <iframe src="https://www.google.com/maps?q=Grand+Rapids+Michigan&output=embed" height="300"></iframe>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Phone: (616) 915-5987</p>
+  <p>Grand Rapids, Michigan</p>
 </section>
 
 <footer>
-  <h3>Informações</h3>
-  <a href="privacidade.html">Privacidade</a>
-  <a href="termos.html">Termos</a>
-  <a href="acessibilidade.html">Acessibilidade</a>
+  <h3>Information</h3>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms of Service</a>
 </footer>
 
-<a href="https://wa.me/5599999999999" class="whatsapp">W</a>
+<a href="tel:+16169155987" class="call">📞</a>
 
 </body>
 </html>
