@@ -3,85 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stinky Pete's Pet Grooming</title>
+<title>Pet Grooming Service</title>
 
 <style>
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    margin:0;
+    font-family: Arial;
+    background:#f5f5f5;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: white;
-    font-weight: bold;
+    background:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
 }
 
 nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: black;
+    margin-left:15px;
+    text-decoration:none;
+    color:black;
 }
 
 .hero {
-    height: 300px;
-    background: url("https://images.unsplash.com/photo-1558788353-f76d92427f16") center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.btn {
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#00b894;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
 }
 
 .section {
-    padding: 40px 20px;
+    padding:40px 20px;
+    background:white;
+    margin-top:10px;
 }
 
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
 }
 
-.card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card h3 {
-    text-align: center;
-    padding: 15px;
-}
-
-.map {
-    width: 100%;
-    height: 300px;
-    border: none;
+.pricing div {
+    padding:10px;
+    border-bottom:1px solid #ddd;
 }
 
 footer {
-    background: black;
-    color: white;
-    padding: 30px 20px;
-    margin-top: 40px;
+    background:black;
+    color:white;
+    padding:30px;
+    margin-top:20px;
 }
 
 footer a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 8px;
+    color:white;
+    display:block;
+    margin:5px 0;
 }
 </style>
 </head>
@@ -89,61 +78,99 @@ footer a {
 <body>
 
 <header>
-    <div>Stinky Pete's</div>
+    <div>Pet Grooming</div>
     <nav>
-        <a href="#work">Work</a>
-        <a href="#location">Location</a>
-        <a href="#contact">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
     </nav>
 </header>
 
-<div class="hero">
-    Professional Dog Grooming
-</div>
+<section class="hero">
+    <h1>Professional Dog Grooming</h1>
+    <p>Quality care for your pet in a safe and clean environment</p>
+    <a href="#" class="btn">Book Appointment</a>
+</section>
 
-<section class="section" id="work">
-    <h2>Our Work</h2>
-    <div class="cards">
+<section class="section">
+    <h2>Business Hours</h2>
+    <p>Mon - Fri: 9am - 6pm</p>
+    <p>Sat: 9am - 4pm</p>
+    <p>Sun: Closed</p>
+</section>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7">
-            <h3>Bath & Brushing</h3>
+<section class="section" id="pricing">
+    <h2>Pricing by Size</h2>
+    <div class="pricing">
+        <div>X-Small - from $22</div>
+        <div>Small - from $26</div>
+        <div>Medium - from $30</div>
+        <div>Large - from $35</div>
+        <div>X-Large - from $45</div>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <h2>Main Services</h2>
+    <div class="grid">
+
+        <div>
+            <h3>Bath</h3>
+            <p>Includes shampoo, blow dry, ear cleaning and brushing.</p>
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8">
-            <h3>Ear Cleaning</h3>
-        </div>
-
-        <div class="card">
-            <!-- ✅ IMAGEM CORRIGIDA AQUI -->
-            <img src="https://images.unsplash.com/photo-1598137260178-cd1f9f6c42d4">
-            <h3>Haircut & Grooming</h3>
+        <div>
+            <h3>Bath & Haircut</h3>
+            <p>Full grooming service including haircut and styling.</p>
         </div>
 
     </div>
 </section>
 
-<section class="section" id="location">
-    <h2>Location</h2>
-    <iframe class="map"
-        src="https://maps.google.com/maps?q=Michigan&t=&z=13&ie=UTF8&iwloc=&output=embed">
-    </iframe>
+<section class="section">
+    <h2>Special Packages</h2>
+
+    <p><strong>Calm & Refresh:</strong> Relaxing treatment for your pet</p>
+    <p><strong>Soothe & Repair:</strong> Skin recovery care</p>
+    <p><strong>Flea Cleanse:</strong> Removes fleas safely</p>
+    <p><strong>Shed Release:</strong> Reduces shedding</p>
+
 </section>
 
-<section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Phone: (555) 123-4567</p>
-    <p>Email: contact@stinkypetes.com</p>
+<section class="section">
+    <h2>Walk-In Services</h2>
+
+    <p>Nail Trim</p>
+    <p>Teeth Brushing</p>
+    <p>Ear Cleaning</p>
+
+</section>
+
+<section class="section">
+    <h2>Why Grooming Matters</h2>
+    <p>
+        Regular grooming keeps your pet healthy, clean, and comfortable.
+        It helps prevent skin issues and improves overall well-being.
+    </p>
+</section>
+
+<section class="section" id="faq">
+    <h2>FAQ</h2>
+
+    <p><strong>How long does grooming take?</strong><br>Usually 2–4 hours.</p>
+
+    <p><strong>Is it safe?</strong><br>Yes, all procedures are done by trained professionals.</p>
+
+    <p><strong>Do you require vaccination?</strong><br>Yes, for safety reasons.</p>
+
 </section>
 
 <footer>
-    <p>© 2026 Stinky Pete's Pet Grooming</p>
+    <p>© 2026 Pet Grooming</p>
 
     <a href="#">Privacy Policy</a>
     <a href="#">Terms of Use</a>
-    <a href="#">Accessibility Statement</a>
-    <a href="#">Cookie Policy</a>
+    <a href="#">Accessibility</a>
 </footer>
 
 </body>
