@@ -118,8 +118,6 @@ body {
   </div>
 </div>
 
-</body>
-</html>
 <!-- SERVICES AVAILABLE -->
 <div style="padding:20px;">
 
@@ -134,12 +132,14 @@ body {
     box-shadow:0 8px 25px rgba(0,0,0,0.08);
   ">
 
-    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+    <!-- ALTERAÇÃO AQUI -->
+    <div style="display:flex; gap:20px; flex-wrap:nowrap;">
 
       <!-- LEFT -->
       <div style="
         flex:1; 
-        min-width:140px; 
+        min-width:0;
+        width:50%;
         text-align:center;
         padding:15px;
         border-radius:20px;
@@ -171,7 +171,8 @@ body {
       <!-- RIGHT -->
       <div style="
         flex:1; 
-        min-width:140px; 
+        min-width:0;
+        width:50%;
         text-align:center;
         padding:15px;
         border-radius:20px;
@@ -242,6 +243,7 @@ body {
   </div>
 
 </div>
+
 <!-- LOCATION SECTION -->
 <div style="padding:20px;">
 
@@ -255,13 +257,11 @@ body {
     box-shadow:0 6px 20px rgba(0,0,0,0.08);
   ">
 
-    <!-- ADDRESS -->
     <p style="margin:0 0 15px 0; font-size:16px;">
       📍 1400 Alpine Ave NW unit 116<br>
       Grand Rapids, MI 49504
     </p>
 
-    <!-- MAP REAL -->
     <div style="
       width:100%;
       border-radius:20px;
