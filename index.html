@@ -3,133 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pet Grooming Service</title>
+<title>Pet Grooming</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
-}
+body { margin:0; font-family:Arial; background:#fff; }
 
-/* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
-  border-bottom: 1px solid #ddd;
+  display:flex; justify-content:space-between;
+  padding:15px 25px; border-bottom:1px solid #ddd;
 }
 
 nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  margin-left:15px; text-decoration:none;
+  color:#333; font-weight:bold;
 }
 
-/* HERO */
 .hero {
-  padding: 50px 20px;
-  text-align: center;
-  background: #f5f5f5;
+  padding:60px 20px;
+  background:#f5f5f5;
+  text-align:center;
 }
 
-.hero h1 {
-  font-size: 32px;
-}
-
-.hero p {
-  color: #555;
-}
-
-/* BUTTON */
 .btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: #0077ff;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
+  display:inline-block;
+  padding:12px 20px;
+  background:#0077ff;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  margin-top:15px;
 }
 
-/* SERVICES */
-.section {
-  padding: 40px 20px;
-}
+.section { padding:40px 20px; }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
 }
 
 .card {
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #fff;
+  border:1px solid #ddd;
+  border-radius:12px;
+  overflow:hidden;
 }
 
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
+.card img { width:100%; height:200px; object-fit:cover; }
 
-.card h3 {
-  padding: 15px;
-}
+.info { background:#fafafa; padding:25px; border-radius:12px; }
 
-/* INFO */
-.info {
-  background: #fafafa;
-  padding: 30px;
-  border-radius: 12px;
-}
-
-/* FOOTER */
 footer {
-  background: #111;
-  color: #fff;
-  padding: 40px 20px;
+  background:#111; color:#fff; padding:40px 20px;
 }
 
 footer a {
-  color: #ccc;
-  display: block;
-  margin: 5px 0;
-  text-decoration: none;
+  color:#ccc; display:block; margin:5px 0;
+  text-decoration:none;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
   <h2>Pet Grooming</h2>
   <nav>
     <a href="#">Services</a>
+    <a href="#">Process</a>
     <a href="#">Location</a>
     <a href="#">Contact</a>
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <h1>Professional Pet Grooming</h1>
-  <p>Quality grooming services to keep your dog clean, healthy and happy.</p>
-  <a class="btn" href="#">Book Appointment</a>
+  <h1>Full-Service Dog Grooming</h1>
+  <p>Professional grooming tailored to your pet’s needs.</p>
+  <a class="btn">Book Now</a>
 </section>
 
-<!-- SERVICES -->
 <section class="section">
   <h2>Our Services</h2>
-
   <div class="grid">
+
     <div class="card">
       <img src="images/banho.jpg">
       <h3>Bath & Brushing</h3>
@@ -144,44 +99,50 @@ footer a {
       <img src="images/tosa.jpg">
       <h3>Haircut & Grooming</h3>
     </div>
+
   </div>
 </section>
 
-<!-- DETAILS -->
+<section class="section">
+  <div class="info">
+    <h2>Service Details</h2>
+    <p>Our grooming services include full bathing, brushing, nail trimming, ear cleaning and coat styling.</p>
+  </div>
+</section>
+
 <section class="section">
   <div class="info">
     <h2>Why Choose Us</h2>
-    <p>We provide professional grooming services with experienced staff and high-quality products.</p>
-
     <ul>
-      <li>Safe and gentle care</li>
-      <li>Experienced groomers</li>
-      <li>Clean and modern facility</li>
+      <li>Certified professional groomers</li>
+      <li>Safe and gentle handling</li>
+      <li>Clean environment</li>
+      <li>Quality grooming products</li>
     </ul>
   </div>
 </section>
 
-<!-- LOCATION -->
+<section class="section">
+  <div class="info">
+    <h2>How It Works</h2>
+    <p>Book your appointment, bring your dog, and our team will handle the rest with care and precision.</p>
+  </div>
+</section>
+
 <section class="section">
   <h2>Location</h2>
-  <p>Visit us at our grooming center.</p>
-
   <iframe 
     src="https://maps.google.com/maps?q=grand%20rapids&t=&z=13&ie=UTF8&iwloc=&output=embed"
     width="100%" height="250" style="border:0;">
   </iframe>
 </section>
 
-<!-- CONTACT -->
 <section class="section">
   <h2>Contact</h2>
-  <p>Call or visit us to schedule your pet's grooming appointment.</p>
-
+  <p>Call us to schedule your appointment.</p>
   <p>Phone: (000) 000-0000</p>
-  <p>Email: contact@email.com</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <h3>Pet Grooming</h3>
 
@@ -189,9 +150,9 @@ footer a {
   <a href="#">Privacy Policy</a>
   <a href="#">Terms of Use</a>
   <a href="#">Cookie Policy</a>
-  <a href="#">Contact</a>
+  <a href="#">Your Privacy Choices</a>
 
-  <p style="margin-top:20px;">© 2026 Pet Grooming Service</p>
+  <p style="margin-top:20px;">© 2026 Pet Grooming</p>
 </footer>
 
 </body>
