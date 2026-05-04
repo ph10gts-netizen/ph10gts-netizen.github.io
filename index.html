@@ -24,13 +24,13 @@ body {
   font-size: 14px;
 }
 
-/* HEADER */
+/* HEADER - CORRIGIDO PARA CENTRALIZAR O BOTÃO */
 .header {
   background: #fff; 
   padding: 15px 5%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: space-between; /* Mantém espaço entre logo e botão */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -38,6 +38,8 @@ body {
   color: #0a2a66;
   font-size: 22px;
   font-weight: bold;
+  display: flex;
+  align-items: center; /* Alinha ícone e texto */
 }
 
 .btn-book-header {
@@ -48,6 +50,9 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
+  line-height: 1; /* Garante altura consistente */
+  display: flex;
+  align-items: center; /* Centraliza texto dentro do botão */
 }
 
 /* PULSE ANIMATION */
@@ -141,8 +146,8 @@ body {
 <div style="padding:20px;">
   <h2 class="section-title">Find Us</h2>
   <p style="text-align:center;">📍 6667 West River Dr NE, Belmont, MI 49306</p>
-  <div style="border-radius:20px; overflow:hidden; margin-top:15px; border: 1px solid #ddd;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d2916.666666666666!2d-85.6!3d43.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8818555555555555%3A0x5555555555555555!2sARF%20Pet%20Grooming!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div style="border-radius:20px; overflow:hidden; margin-top:15px; border: 1px solid #ddd; height: 300px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.871617260021!2d-85.61339108451996!3d43.08611117914488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819ad5493236e7d%3A0xc64b248a395b05a7!2s6667%20West%20River%20Dr%20NE%2C%20Belmont%2C%20MI%2049306%2C%20USA!5e0!3m2!1sen!2sbr!4v1716123456789!5m2!1sen!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
 </div>
 
